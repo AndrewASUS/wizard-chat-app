@@ -98,7 +98,7 @@ export const useAuthStore = create((set, get) => ({
       
       // Safely access error message
       const errorMessage =
-        error?.response?.data?.message || "Image to large, try uploading a png or jpeg file.";
+        error?.response?.data?.message || "Image to large, try uploading a PNG or JPEG image.";
         
       toast.error(errorMessage);
     } finally {
